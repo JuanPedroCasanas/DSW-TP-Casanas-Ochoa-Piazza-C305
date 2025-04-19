@@ -25,7 +25,7 @@ Regularidad:
 |:-|:-|
 |CRUD simple|1. CRUD Persona<br>2. CRUD Profesional<br>3. CRUD Consultorio|
 |CRUD dependiente|1. CRUD Turno {depende de} CRUD Profesional y CRUD Persona<br>2. CRUD Modulo {depende de} CRUD Profesional y CRUD Consultorio|
-|Listado<br>+<br>detalle| 1. Listado de turnos filtrado por profesional y rango de fecha, muestra fecha y hora de turno, estado del mismo y apellido de Persona<br> 2. Listado de modulos filtrado por consultorio, muestra el profesional y el tipo de modulo|
+|Listado<br>+<br>detalle| 1. Listado de turnos con estado disponible filtrado por profesional en un rango de fechas <br> 2. Listado de modulos filtrado por consultorio, muestra el profesional y el tipo de modulo|
 |CUU/Epic|1. Reservar un turno para un profesional<br>2. Reservar un módulo en un consultorio|
 
 
@@ -41,7 +41,7 @@ Adicionales para Aprobación
 
 |Req|Detalle|
 |:-|:-|
-|Listados |1. Listar Personas filtradas por Obra Social <br>2. Listado de turnos disponibles filtrado por profesional en un rango de fechas |
+|Listados |1. Listar Personas filtradas por Obra Social <br> 2. Listado de turnos filtrado por profesional y rango de fecha, muestra fecha y hora de turno, estado del mismo y apellido de Persona|
 |CUU/Epic|1. Cancelar turno<br>2. Registrar profesional|
 |Otros|1. Envío de recordatorio de turno por email|
 
