@@ -2,16 +2,16 @@
 
 ## Grupo
 ### Integrantes
-* legajo - Apellido(s), Nombre(s)
+* 50373 - Casañas, Juan Pedro
+* 50452 - Ochoa, María Sofía
+* 50330 - Piazza, Nair Antonella
 
 ### Repositorios
-* [frontend app](http://hyperlinkToGihubOrGitlab)
-* [backend app](http://hyperlinkToGihubOrGitlab)
-*Nota*: si utiliza un monorepo indicar un solo link con fullstack app.
+* [fullstack app](https://github.com/JuanPedroCasanas/DSW-App-Fullstack)
 
 ## Tema
 ### Descripción
-*2 a 6 líneas describiendo el negocio (menos es más)*
+Sistema de gestión de consultorios y turnos que administra tanto el alquiler de consultorios de un espacio a profesionales, como la asignación de turnos a pacientes que se atiendan por los mismos
 
 ### Modelo
 ![imagen del modelo]()
