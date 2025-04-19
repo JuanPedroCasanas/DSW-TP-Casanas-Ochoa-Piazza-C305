@@ -14,9 +14,7 @@
 Sistema de gestión de consultorios y turnos que administra tanto el alquiler de consultorios de un espacio a profesionales, como la asignación de turnos a pacientes que se atiendan por los mismos
 
 ### Modelo
-![imagen del modelo]()
-
-*Nota*: incluir un link con la imagen de un modelo, puede ser modelo de dominio, diagrama de clases, DER. Si lo prefieren pueden utilizar diagramas con [Mermaid](https://mermaid.js.org) en lugar de imágenes.
+![imagen del modelo](https://github.com/JuanPedroCasanas/DSW-TP-Casanas-Ochoa-Piazza-C305/blob/main/ART_DMCL.png)
 
 ## Alcance Funcional 
 
@@ -27,17 +25,17 @@ Sistema de gestión de consultorios y turnos que administra tanto el alquiler de
 Regularidad:
 |Req|Detalle|
 |:-|:-|
-|CRUD simple|1. CRUD Tipo Habitacion<br>2. CRUD Servicio<br>3. CRUD Localidad|
-|CRUD dependiente|1. CRUD Habitación {depende de} CRUD Tipo Habitacion<br>2. CRUD Cliente {depende de} CRUD Localidad|
-|Listado<br>+<br>detalle| 1. Listado de habitaciones filtrado por tipo de habitación, muestra nro y tipo de habitación => detalle CRUD Habitacion<br> 2. Listado de reservas filtrado por rango de fecha, muestra nro de habitación, fecha inicio y fin estadía, estado y nombre del cliente => detalle muestra datos completos de la reserva y del cliente|
-|CUU/Epic|1. Reservar una habitación para la estadía<br>2. Realizar el check-in de una reserva|
+|CRUD simple|1. CRUD Persona<br>2. CRUD Profesional<br>3. CRUD Consultorio|
+|CRUD dependiente|1. CRUD Turno {depende de} CRUD Profesional y CRUD Persona<br>2. CRUD Modulo {depende de} CRUD Profesional y CRUD Consultorio|
+|Listado<br>+<br>detalle| 1. Listado de turnos filtrado por profesional y rango de fecha, muestra fecha y hora de turno, estado del mismo y apellido de Persona<br> 2. Listado de modulos filtrado por consultorio, muestra el profesional y el tipo de modulo|
+|CUU/Epic|1. Reservar un turno para un profesional<br>2. Reservar un módulo en un consultorio|
 
 
 Adicionales para Aprobación
 |Req|Detalle|
 |:-|:-|
-|CRUD |1. CRUD Tipo Habitacion<br>2. CRUD Servicio<br>3. CRUD Localidad<br>4. CRUD Provincia<br>5. CRUD Habitación<br>6. CRUD Empleado<br>7. CRUD Cliente|
-|CUU/Epic|1. Reservar una habitación para la estadía<br>2. Realizar el check-in de una reserva<br>3. Realizar el check-out y facturación de estadía y servicios|
+|CRUD |1. CRUD Tipo Modulo<br>2. CRUD Obra Social<br>3. CRUD Especialidad|
+|CUU/Epic|1. Reservar un turno para un profesional<br>2. Reservar un módulo en un consultorio<br>3. Registrar nuevo paciente|
 
 
 ### Alcance Adicional Voluntario
@@ -46,7 +44,7 @@ Adicionales para Aprobación
 
 |Req|Detalle|
 |:-|:-|
-|Listados |1. Estadía del día filtrado por fecha muestra, cliente, habitaciones y estado <br>2. Reservas filtradas por cliente muestra datos del cliente y de cada reserve fechas, estado cantidad de habitaciones y huespedes|
-|CUU/Epic|1. Consumir servicios<br>2. Cancelación de reserva|
-|Otros|1. Envío de recordatorio de reserva por email|
+|Listados |1. Listar Personas filtradas por Obra Social <br>2. Listado de turnos disponibles filtrado por profesional en un rango de fechas |
+|CUU/Epic|1. Cancelar turno<br>2. Registrar profesional|
+|Otros|1. Envío de recordatorio de turno por email|
 
