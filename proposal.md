@@ -14,7 +14,7 @@
 Sistema de gestión de consultorios y turnos que administra tanto el alquiler de consultorios de un espacio a profesionales, como la asignación de turnos a pacientes que se atiendan por los mismos
 
 ### Modelo
-![imagen del modelo](https://github.com/JuanPedroCasanas/DSW-TP-Casanas-Ochoa-Piazza-C305/blob/main/ART_DMCL.png)
+![imagen del modelo](https://github.com/JuanPedroCasanas/DSW-TP-Casanas-Ochoa-Piazza-C305/blob/main/ART_DMCL_v2.png)
 
 ## Alcance Funcional 
 
