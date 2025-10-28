@@ -25,7 +25,7 @@ Regularidad:
 |:-|:-|
 |CRUD simple|1. CRUD Persona<br>2. CRUD Profesional<br>3. CRUD Consultorio|
 |CRUD dependiente|1. CRUD Turno {depende de} CRUD Profesional y CRUD Persona<br>2. CRUD Modulo {depende de} CRUD Profesional y CRUD Consultorio|
-|Listado<br>+<br>detalle| 1. Listado de turnos con estado disponible filtrado por profesional en un rango de fechas <br> 2. Listado de modulos filtrado por consultorio, muestra el profesional y el tipo de modulo|
+|Listado<br>+<br>detalle| 1. Listado de turnos filtrado por:  Profesional, paciente, consultorio y/o fecha <br> 2. Listado de modulos filtrado por: Profesional, tipo de modulo, mes y/o consultorio|
 |CUU/Epic|1. Reservar un turno para un profesional<br>2. Reservar un módulo en un consultorio|
 
 
